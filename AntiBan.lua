@@ -1,8 +1,3 @@
-n = "B" 
-n = n.."a" 
-n = n.."ns" 
-n = n.."e" 
-n = n.."y" 
 h = Instance.new("Hint") 
 m = Instance.new("Message") 
 script.Name = n.."'s antiban" 
