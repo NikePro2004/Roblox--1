@@ -641,10 +641,10 @@ NewCommand("Music","The scripts music player, self explanatory.",4,{"m","music",
 	local RbxGui = assert(LoadLibrary("RbxGui"));
 	pcall(function()
 		if Flags["name"] then
-			local Name=Flags["name"][1]:sub(2);
-			local Http=Core.Services.Http;
-			local Url="http://roproxy.tk/catalog/json?Keyword="..tostring(Name).."&Category=9&ResultsPerPage=20";
-			local Assets=Http:JSONDecode(Http:GetAsync(Url))
+			local Name = Flags["name"][1]:sub(2);
+			local Http = Core.Services.Http;
+			local Quarry = "http://roproxy.tk/catalog/json?Keyword="..tostring(Name).."&Category=9&ResultsPerPage=30";
+			local Assets = Http:JSONDecode(Http:GetAsync(Quarry))
 			function List(Player)
 				wait(DestroyTablets(Player));
 				for i=1,#Assets do
